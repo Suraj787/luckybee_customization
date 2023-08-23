@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include luckybee_customization *.css
+recursive-include luckybee_customization *.csv
+recursive-include luckybee_customization *.html
+recursive-include luckybee_customization *.ico
+recursive-include luckybee_customization *.js
+recursive-include luckybee_customization *.json
+recursive-include luckybee_customization *.md
+recursive-include luckybee_customization *.png
+recursive-include luckybee_customization *.py
+recursive-include luckybee_customization *.svg
+recursive-include luckybee_customization *.txt
+recursive-exclude luckybee_customization *.pyc
