@@ -126,6 +126,12 @@ app_license = "MIT"
 #	}
 # }
 
+doc_events = {
+	"Purchase Receipt": {
+		"after_insert": "luckybee_customization.luckybee_customization.hook_events.item.update_item",
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 
