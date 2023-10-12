@@ -30,6 +30,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -128,7 +129,14 @@ app_license = "MIT"
 
 doc_events = {
 	"Purchase Receipt": {
-		"after_insert": "luckybee_customization.luckybee_customization.hook_events.item.update_item",
+		"validate": [
+			"luckybee_customization.luckybee_customization.hook_events.item.update_item",
+			"luckybee_customization.luckybee_customization.hook_events.item.create_selling_price"
+		]
+	},
+	"Item": {
+		"before_save": "luckybee_customization.luckybee_customization.hook_events.item.sync_keepa_item",
+		"validate": "luckybee_customization.luckybee_customization.hook_events.item.create_item_price"
 	}
 }
 

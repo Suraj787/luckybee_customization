@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Item Price",
+ "links": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2023-10-07 19:28:06.039108",
+   "default_value": null,
+   "doc_type": "Item Price",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "item_name",
+   "idx": 0,
+   "is_system_generated": 0,
+   "modified": "2023-10-07 19:28:06.039108",
+   "modified_by": "Administrator",
+   "module": null,
+   "name": "Item Price-item_name-length",
+   "owner": "Administrator",
+   "property": "length",
+   "property_type": "Int",
+   "row_name": null,
+   "value": "999"
+  }
+ ],
+ "sync_on_migrate": 1
+}
